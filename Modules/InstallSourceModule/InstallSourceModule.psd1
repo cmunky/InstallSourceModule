@@ -12,7 +12,7 @@
     RootModule = 'RootModule.psm1'
     
     # Version number of this module.
-    ModuleVersion = '0.0.99'
+    ModuleVersion = '0.0.104'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -33,7 +33,7 @@
     Description = 'Function to install Powershell module from source'
     
     # Minimum version of the PowerShell engine required by this module
-    PowerShellVersion = '7.2'
+    PowerShellVersion = '7.1'
     
     # Name of the PowerShell host required by this module
     # PowerShellHostName = ''
