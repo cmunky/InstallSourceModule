@@ -30,7 +30,7 @@ function Install-SourceModule () {
         -InstallationPolicy 'Trusted'
 
     $ManifestFile = "$LocalModulePath/${ModuleName}/${ModuleName}.psd1"
-    $ModuleVersion = $(Import-PowerShellDataFile -Path $ManifestFile).ModuleVersionpw
+    $ModuleVersion = $(Import-PowerShellDataFile -Path $ManifestFile).ModuleVersion
     $ModulePackage = "$RelativePath/$ModuleName.$ModuleVersion.nupkg"
     Remove-Item -Path $ModulePackage -ErrorAction 'SilentlyContinue'
     Publish-Module -Path "$LocalModulePath/${ModuleName}" -Repository $RepositoryName
